@@ -1,8 +1,111 @@
 /** Custom Font Initialization */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
-.fira-sans
+h1, h2, h3, h4, h5, h6, p, a, button
 {
     font-family: "Fira Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+}
+
+/** Container */
+body
+{
+    background: #EFF;
+    padding: 0 10rem;
+}
+
+/** Header Styles */
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+header nav ul
+{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+header nav ul li
+{
+    list-style-type: none;
+}
+header nav ul li a
+{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #111;
+}
+header nav ul li a:hover
+{
+    opacity: 70%;
+}
+header nav ul li a button
+{
+    cursor: pointer;
+    background: transparent;
+    color: #32AA32;
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+    border: 3px solid #32EE32;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+header nav ul li a button:hover
+{
+    background: #32AA32;
+    border-color: #32FF32;
+    color: #F5F5F5;
+}
+
+/** Main Styles */
+main
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+/** Banner Styles */
+main #banner
+{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 5rem 3rem;
+    border-radius: 0.75rem;
+    background-color:#B0F4D0;
+}
+main #banner .banner-text
+{
+    display: flex;
+    flex-direction: column;
+}
+main #banner .banner-text h3
+{
+    color: #777;
+}
+main #banner .banner-text h1
+{
+    font-size: 2.5rem;
+}
+main #banner .banner-text button
+{
+    width: fit-content;
+    color: #F5F5F5;
+    font-weight: 600;
+    background: green;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+main #banner .banner-text button:hover
+{
+    opacity: 95%;
+    border-radius: 0.75rem;
+}
+main #banner .banner-img img
+{
+    width: 100%;
 }
