@@ -1,0 +1,8 @@
+/** Custom Font Initialization */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+.fira-sans
+{
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
