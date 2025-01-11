@@ -1,6 +1,6 @@
 /** Custom Font Initialization */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
-h1, h2, h3, h4, h5, h6, p, a, button, q
+h1, h2, h3, h4, h5, h6, p, a, button, input, q
 {
     font-family: "Fira Sans", sans-serif;
 }
@@ -140,7 +140,7 @@ main #pillars .pillar-cards
 main #pillars .pillar-cards .pillar-card
 {
     width: 247px;
-    background: #FFF;
+    background: #FFFFFF;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -161,28 +161,32 @@ main #pillars .pillar-cards .pillar-card .pillar-card-text
 }
 
 /** Vision's Styles */
-main .vision-quote
+main #vision-quote
 {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
-main .vision-quote > div
+main #vision-quote > div
 {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
-main .vision-quote > div h2
+main #vision-quote > div h2
 {
     font-size: xx-large;
 }
-main .vision-quote #vision
+main #vision-quote > div p
+{
+    color: #555;
+}
+main #vision-quote #vision
 {
     display: flex;
     gap: 1.5rem;
 }
-main .vision-quote #vision > div
+main #vision-quote #vision > div
 {
     width: 319.5px;
     display: flex;
@@ -191,13 +195,13 @@ main .vision-quote #vision > div
     padding: 2rem;
     border-radius: 1rem;
 }
-main .vision-quote #vision > div .vision-card-text
+main #vision-quote #vision > div .vision-card-text
 {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
 }
-main .vision-quote #vision > div button
+main #vision-quote #vision > div button
 {
     width: fit-content;
     color: #F5F5F5;
@@ -208,34 +212,210 @@ main .vision-quote #vision > div button
     font-weight: 600;
     cursor: pointer;
 }
-main .vision-quote #vision > div button:hover
+main #vision-quote #vision > div button:hover
 {
     color: #DDD;
     border-radius: 1rem;
 }
-main .vision-quote #vision > div img
+main #vision-quote #vision > div img
 {
     max-width: 4rem;
 }
 
 /** Quote Styles */
-main .vision-quote #quote
+main #vision-quote #quote
 {
-    background-color: #F5F5F5;
-    padding: 2rem 1.5rem;
+    background-image: url("./quote-bg.png");
+    background-repeat: no-repeat;
+    background-position: 2% 11%;
+    background-color: #FFFFFF;
+    padding: 3rem 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
     border: 1px solid lightgray;
     border-radius: 1.25rem;
 }
-main .vision-quote #quote .quote-author
+main #vision-quote #quote .quote-author
 {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
-main .vision-quote #quote .quote-author p
+main #vision-quote #quote .quote-author p
 {
     color: #888;
+}
+
+/** News Styles */
+main #news
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+main #news > div
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+main #news > div h2
+{
+    font-size: xx-large;
+}
+main #news > div p
+{
+    color: #555;
+}
+main #news .news-articles
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+main #news .news-articles article
+{
+    background: #FFFFFF;
+    display: flex;
+    gap: 2rem;
+    border: 1px solid lightgray;
+    border-radius: 1.5rem;
+    padding: 3rem;
+}
+main #news .news-articles article > img
+{
+    width: 40%;
+    border-radius: 1.5rem;
+}
+main #news .news-articles article > div
+{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+main #news .news-articles article > div .article-info
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+main #news .news-articles article > div .article-info img
+{
+    width: 6.75rem;
+}
+main #news .news-articles article > div .article-info .article-datetime
+{
+    font-size: large;
+}
+main #news .news-articles article > div .article-btns
+{
+    display: flex;
+    gap: 1rem;
+}
+main #news .news-articles article > div .article-btns button
+{
+    color: #F5F5F5;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+main #news .news-articles article > div .article-btns button:first-child
+{
+    background: #0040FF;
+}
+main #news .news-articles article > div .article-btns button:last-child
+{
+    background: #FF0000;
+}
+main #news .news-articles article > div .article-btns button:first-child:hover
+{
+    background: #00C0FF;
+    color: #111;
+}
+main #news .news-articles article > div .article-btns button:last-child:hover
+{
+    background: #FF0088;
+    color: #111;
+}
+
+/** Donation Styles */
+main #donate
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+main #donate .donate-head
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+main #donate .donate-head h2
+{
+    font-size: xx-large;
+}
+main #donate .donate-head p
+{
+    color: #555;
+}
+main #donate .donate-fix-amount
+{
+    display: flex;
+    gap: 1.5rem;
+}
+main #donate .donate-fix-amount > div
+{
+    background: #FFFFFF;
+    padding: 2.5rem;
+    border: 1px solid lightgray;
+    border-radius: 1.25rem;
+}
+main #donate .donate-fix-amount > div:nth-child(2)
+{
+    background: #32AA3290;
+    color: #555;
+}
+main #donate .donate-fix-amount > div:hover
+{
+    background: #32AA3277;
+    color: #333;
+}
+main #donate .donate-custom-amount
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+main #donate .donate-custom-amount input
+{
+    width: 65%;
+    text-align: center;
+    padding: 0.75rem;
+    font-size: larger;
+    border: 1px solid lightgray;
+}
+main #donate .donate-confirm button
+{
+    background: #32AA32;
+    color: #F5F5F5;
+    font-size: larger;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+main #donate .donate-confirm button:hover
+{
+    background: #32DD32;
+    color: #333;
+    font-size: larger;
+    font-weight: 600;
 }
