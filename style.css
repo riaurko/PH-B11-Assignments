@@ -13,7 +13,6 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, q
 body
 {
     background: #EFF;
-    padding: 0 10rem;
 }
 
 /** Header Styles */
@@ -22,7 +21,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1rem 10rem;
 }
 header nav ul
 {
@@ -68,6 +67,7 @@ main
     display: flex;
     flex-direction: column;
     gap: 5rem;
+    padding: 0 10rem;
 }
 
 /** Banner Styles */
@@ -398,7 +398,7 @@ main #donate .donate-custom-amount input
 {
     width: 65%;
     text-align: center;
-    padding: 0.75rem;
+    padding: 0.75rem 0;
     font-size: larger;
     border: 1px solid lightgray;
 }
@@ -418,4 +418,94 @@ main #donate .donate-confirm button:hover
     color: #333;
     font-size: larger;
     font-weight: 600;
+}
+
+/** Subscribe My Son */
+main #subscribe-nlr
+{
+    background: #32AA3249;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 5rem 12.5rem;
+    border-radius: 1.5rem;
+    align-items: center;
+}
+main #subscribe-nlr > div:first-child
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+main #subscribe-nlr > div h2
+{
+    font-size: xx-large;
+}
+main #subscribe-nlr > div p
+{
+    color: #555;
+}
+main #subscribe-nlr .email-subscribe
+{
+    display: flex;
+    width: 100%;
+}
+main #subscribe-nlr .email-subscribe input[type="email"]
+{
+    width: 100%;
+    padding: 1rem 2rem;
+    border: none;
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+}
+main #subscribe-nlr .email-subscribe input[type="submit"]
+{
+    background: #00AA00;
+    color: #F5F5F5;
+    font-size: medium;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-top-right-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    cursor: pointer;
+}
+main #subscribe-nlr .email-subscribe input[type="submit"]:hover
+{
+    background: #00EE00;
+    color: #333;
+}
+main #subscribe-nlr .no-worry
+{
+    text-align: center;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/** Footer Styles */
+footer
+{
+    margin-top: 5rem;
+    background: #EEE;
+    padding: 3.25rem 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+footer h2
+{
+    text-align: center;
+}
+footer > div
+{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+footer > div img
+{
+    width: 2rem;
 }
