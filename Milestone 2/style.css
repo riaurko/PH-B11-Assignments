@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400..700&display=swap');
+*
+{
+    margin: 0;
+}
+:root
+{
+    --primary: #FEA301;
+    --secondary: #01ACFD;
+}
+body
+{
+    background: #F0F8FF;
+    font-family: 'Quicksand', "Lucida Sans", sans-serif;
+}
+.text-primary
+{
+    color: var(--primary);
+}
+.text-secondary
+{
+    color: var(--secondary);
+}
+.bg-primary
+{
+    background-color: var(--primary);
+}
+.bg-secondary
+{
+    background-color: var(--secondary);
+}
+
+/** Header + Nav */
+header
+{
+    padding: 1rem 6rem;
+}
+header nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav #logo-title
+{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+header nav > img
+{
+    display: none;
+}
+header nav ul
+{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+header nav ul li
+{
+    list-style-type: none;
+    font-weight: 500;
+}
+header nav ul li:first-child
+{
+    font-weight: 700;
+}
+header nav ul li:nth-child(2)
+{
+    color: #8700FF;
+}
+header nav ul li:last-child
+{
+    color: #DC143C;
+}
+header nav button
+{
+    color: #F0F8FF;
+    border: none;
+    padding: 0.75rem 3rem;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    font-size: medium;
+}
+
+/** Main */
+main
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 0 6rem;
+}
+
+/** Banner */
+#banner
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+#banner .banner-content
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#banner .banner-content h1
+{
+    font-size: 3rem;
+}
+#banner .banner-content button
+{
+    background-color: #222;
+    color: #F0F8FF;
+    width: fit-content;
+    padding: 0.75rem 2.5rem;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: medium;
+    font-weight: 500;
+}
+
+/** Curriculum */
+
+/*! Responsive */
+@media screen and (max-width: 576px) {
+    header
+    {
+        padding: 1rem 1rem;
+        border-bottom: 1pt solid var(--primary);
+    }
+    header nav ul, nav > button, #logo-title h2
+    {
+        display: none;
+    }
+    header nav #logo-title img
+    {
+        width: 3rem;
+    }
+    header nav > img
+    {
+        display: inline-block;
+    }
+    main
+    {
+        padding: 1rem 1rem;
+    }
+    #banner
+    {
+        flex-direction: column-reverse;
+    }
+    #banner .banner-content
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #banner .banner-content h1
+    {
+        font-size: xx-large;
+    }
+    #banner .banner-content button
+    {
+        font-size: larger;
+        padding: 0.75rem 2rem;
+    }
+    #banner .banner-img
+    {
+        padding: 0.5rem;
+    }
+    #banner .banner-img img
+    {
+        width: 100%;
+    }
+}
