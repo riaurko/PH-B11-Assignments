@@ -34,6 +34,10 @@ button
     font-family: 'Quicksand', "Lucida Sans", sans-serif;
     cursor: pointer;
 }
+.section-title
+{
+    font-size: 2.5rem;
+}
 
 /** Header + Nav */
 header
@@ -239,14 +243,13 @@ main h2
 main > div
 {
     background: linear-gradient(to bottom, #F0F8FF, rgba(254, 163, 1, 0.3));
-    padding: 3.75rem 6rem;
 }
 #stories
 {
+    padding: 3.75rem 6rem;
     background-image: url(./bg.png);
     background-position: center;
     background-size: contain;
-    margin: 0 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -284,7 +287,7 @@ main > div
 #stories .story-boxes .story
 {
     width: min-content;
-    background-color: #DDD;
+    background-color: #FFF;
     border-radius: 1rem;
     position: relative;
 }
@@ -311,47 +314,38 @@ main > div
 }
 #stories .story-boxes .story h4
 {
-    display: inline-block;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
-    z-index: 2;
+    /* display: inline-block; */
+    width: fit-content;
     position: absolute;
+    left: 50px;
     color: #F0F8FF;
 }
 #stories .story-boxes .story:first-child h4
 {
     background-color: var(--secondary);
-    width: 95px;
     top: 270px;
-    left: 50px;
 }
 #stories .story-boxes .story:nth-child(2) h4
 {
     background-color: #8700FF;
-    width: 95px;
     top: 160px;
-    left: 40px;
 }
 #stories .story-boxes .story:nth-child(3) h4
 {
     background-color: limegreen;
-    width: 115px;
     top: 160px;
-    left: 50px;
 }
 #stories .story-boxes .story:nth-child(4) h4
 {
     background-color: #8700FF;
-    width: 95px;
     top: 165px;
-    left: 50px;
 }
 #stories .story-boxes .story:nth-child(5) h4
 {
     background-color: #8700FF;
-    width: 105px;
     top: 165px;
-    left: 50px;
 }
 #stories button
 {
@@ -377,7 +371,7 @@ footer > div
 {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 footer .kids-edu h2
 {
@@ -454,6 +448,10 @@ footer .social img:hover
 
 /*! Responsive */
 @media screen and (max-width: 576px) {
+    .section-title
+    {
+        font-size: x-large;
+    }
     header
     {
         padding: 1rem 1rem;
@@ -473,8 +471,8 @@ footer .social img:hover
     }
     main > div
     {
-        padding-left: 1rem;
-        padding-right: 2rem;
+        padding-left: 0rem;
+        padding-right: 1rem;
     }
     #banner
     {
@@ -527,48 +525,43 @@ footer .social img:hover
     }
     #stories .story-boxes .story img
     {
-        width: 100%;
+        width: 175px;
     }
     #stories .story-boxes .story h3
     {
-        font-size: medium;
+        font-size: small;
+    }
+    #stories .story-boxes .story h4
+    {
+        padding: 0.25rem 0.75rem;
+        font-size: x-small;
+        width: fit-content;
+        left: 1.5rem;
     }
     #stories .story-boxes .story:nth-child(2) h4
     {
-        font-size: small;
         background-color: #8700FF;
-        width: 80px;
-        top: 80px;
-        left: 20px;
+        top: 97px;
     }
     #stories .story-boxes .story:nth-child(3) h4
     {
-        font-size: small;
         background-color: limegreen;
-        width: 95px;
-        top: 80px;
-        left: 10px;
+        top: 97px;
     }
     #stories .story-boxes .story:nth-child(4) h4
     {
-        font-size: small;
         background-color: #8700FF;
-        width: 77px;
-        top: 80px;
-        left: 20px;
+        top: 100px;
     }
     #stories .story-boxes .story:nth-child(5) h4
     {
-        font-size: small;
         background-color: #8700FF;
-        width: 85px;
-        top: 80px;
-        left: 15px;
+        top: 100px;
     }
     footer
     {
         padding: 3rem 1rem;
         flex-direction: column;
-        gap: 3rem;
+        gap: 3.5rem;
     }
 }
